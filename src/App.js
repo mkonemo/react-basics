@@ -3,6 +3,7 @@ import Card from './components/UI/Card';
 
 import Props from './components/props/Props';
 import DateExample from './components/date/DateExample';
+import Json from './components/json/Json';
 import './style.css';
 
 const App = () => {
@@ -39,6 +40,9 @@ const App = () => {
             </pre>{' '}
             for an example
           </Card>
+        </li>
+        <li>
+          <Json />
         </li>
       </ol>
     </div>
