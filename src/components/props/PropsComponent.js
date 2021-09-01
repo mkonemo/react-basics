@@ -1,11 +1,11 @@
 import React from 'react';
-
+import Card from '../UI/Card';
 function PropsComponent(props) {
   return (
-    <div className='card'>
+    <Card>
       <h4>{props.title}</h4>
       <p>{props.description}</p>
-    </div>
+    </Card>
   );
 }
 

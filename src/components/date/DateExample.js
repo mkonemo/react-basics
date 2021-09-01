@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Card from '../UI/Card';
+
 function DateExample() {
   const dateValue = new Date();
   const month = dateValue.toLocaleString('en-US', { month: 'long' });
@@ -9,11 +11,11 @@ function DateExample() {
   return (
     <div>
       <h3>Date formatting</h3>
-      <div className="card">
+      <Card>
         <div>{month}</div>
         <div>{year}</div>
         <div>{day}</div>
-      </div>
+      </Card>
     </div>
   );
 }
