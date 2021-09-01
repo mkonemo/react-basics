@@ -2,7 +2,7 @@ import React from 'react';
 
 import PropsComponent from './PropsComponent';
 
-function Props() {
+const Props = () => {
   const exampleProps = [
     { title: 'Example title', desc: 'Example description' }
   ];

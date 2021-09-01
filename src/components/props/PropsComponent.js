@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../UI/Card';
-function PropsComponent(props) {
+const PropsComponent = (props) => {
   return (
     <Card>
       <h4>{props.title}</h4>

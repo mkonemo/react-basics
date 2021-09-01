@@ -5,7 +5,7 @@ import Props from './components/props/Props';
 import DateExample from './components/date/DateExample';
 import './style.css';
 
-export default function App() {
+const App = () => {
   return (
     <div>
       <h1>React <img src='https://firebasestorage.googleapis.com/v0/b/reacttest-8afe6.appspot.com/o/logo192.png?alt=media&token=12a771cc-74f0-4e5c-9545-31b7a35ad484' /></h1>
@@ -44,3 +44,4 @@ export default function App() {
     </div>
   );
 }
+export default App;

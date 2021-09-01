@@ -2,7 +2,7 @@ import React from 'react';
 
 import Card from '../UI/Card';
 
-function DateExample() {
+const DateExample = () => {
   const dateValue = new Date();
   const month = dateValue.toLocaleString('en-US', { month: 'long' });
   const year = dateValue.getFullYear();
