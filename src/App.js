@@ -22,7 +22,7 @@ export default function App() {
         </li>
         <li>
           <h3>Card container example</h3>
-          <Card /> 
+          <Card>This is a shared container component. See <pre><code>./components/UI/Card.js</code></pre> for an example</Card> 
         </li>
       </ol>
     </div>
