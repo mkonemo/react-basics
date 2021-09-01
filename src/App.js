@@ -14,6 +14,13 @@ export default function App() {
         <li>
           <Props />
         </li>
+        <li>
+          <h3>Composition</h3>
+          <p>
+            Generally, the approach of building a user interface from smaller
+            building blocks is called composition.
+          </p>
+        </li>
       </ol>
       <h2>Utilities</h2>
       <ol>
@@ -21,8 +28,15 @@ export default function App() {
           <DateExample />
         </li>
         <li>
-          <h3>Card container example</h3>
-          <Card>This is a shared container component. See <pre><code>./components/UI/Card.js</code></pre> for an example</Card> 
+          <h3>Custom HTML element: Card container example</h3>
+          <p>This is a custom HTML element, built as a component and used as a shared container.</p>
+          <Card>
+             See{' '}
+            <pre>
+              <code>./components/UI/Card.js</code>
+            </pre>{' '}
+            for an example
+          </Card>
         </li>
       </ol>
     </div>
