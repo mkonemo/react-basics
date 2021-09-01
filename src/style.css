@@ -4,6 +4,11 @@ body {
   max-width: 768px;
 }
 
+img {
+  width: 25px;
+  vertical-align: initial;
+}
+
 h2 {
   margin-top: 2em;
   display: block;
