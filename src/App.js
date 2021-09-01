@@ -10,11 +10,21 @@ export default function App() {
     <div>
       <h1>React</h1>
       <h2>Basics</h2>
-      <Props />
+      <ol>
+        <li>
+          <Props />
+        </li>
+      </ol>
       <h2>Utilities</h2>
-      <DateExample />
-      <h3>Card container example</h3>
-      <Card />
+      <ol>
+        <li>
+          <DateExample />
+        </li>
+        <li>
+          <h3>Card container example</h3>
+          <Card /> 
+        </li>
+      </ol>
     </div>
   );
 }

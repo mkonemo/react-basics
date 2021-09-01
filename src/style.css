@@ -11,3 +11,8 @@ h2 {
 h3 {
   margin-top: 1.5em;
 }
+
+ol>li::marker {
+  font-weight: bold;
+  font-size: 1.2em;
+}
