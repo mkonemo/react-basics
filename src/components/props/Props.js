@@ -17,6 +17,18 @@ function Props() {
         title={exampleProps[0].title}
         description={exampleProps[0].desc}
       />
+
+      <h4>props.children</h4>
+      <pre>children</pre> is a reserved name
+
+and the value of this special children prop
+
+will always be the content
+
+between the opening and closing tags
+
+of your custom component.<br />
+For an example look at the Card component in UI.
     </div>
   );
 }
