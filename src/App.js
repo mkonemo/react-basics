@@ -11,7 +11,7 @@ import './style.css';
 const App = () => {
   return (
     <div>
-      <h1>React <img src='https://firebasestorage.googleapis.com/v0/b/reacttest-8afe6.appspot.com/o/logo192.png?alt=media&token=12a771cc-74f0-4e5c-9545-31b7a35ad484' /></h1>
+      <h1>React <img src='https://firebasestorage.googleapis.com/v0/b/react-basics-2ff51.appspot.com/o/logo192.png?alt=media&token=a484171c-797a-4a94-a7f7-ee9cb914a2e3' /></h1>
       <h2>Basics</h2>
       <ol>
         <li>
