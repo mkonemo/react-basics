@@ -43,10 +43,11 @@ const App = () => {
             for an example
           </Card>
         </li>
+        <li><ClickEvent /></li>
         <li>
           <Json />
         </li>
-        <li><ClickEvent /></li>
+        
       </ol>
     </div>
   );
