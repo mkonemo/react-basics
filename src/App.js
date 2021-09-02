@@ -2,9 +2,13 @@ import React from 'react';
 import Card from './components/UI/Card';
 
 import Props from './components/props/Props';
+import State from './components/state/State';
+
 import DateExample from './components/date/DateExample';
 import Json from './components/json/Json';
 import ClickEvent from './components/events/ClickEvent';
+import UpdateState from './components/state/UpdateState';
+
 
 import './style.css';
 
@@ -24,6 +28,9 @@ const App = () => {
             building blocks is called composition.
           </p>
         </li>
+        <li>
+          <State />
+          </li>
       </ol>
       <h2>Utilities</h2>
       <ol>
@@ -44,6 +51,7 @@ const App = () => {
           </Card>
         </li>
         <li><ClickEvent /></li>
+        <li><UpdateState variable='Initial value' /></li>
         <li>
           <Json />
         </li>
