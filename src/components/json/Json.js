@@ -13,11 +13,10 @@ const Json = () => {
         {sampleData.map((item, i) => {
           return (
             <Card>
-              <h4>
-                {' '}
-                My Name is {item.firstName} {item.lastName} and my age is{' '}
-                {item.age}.
-              </h4>
+              <p>
+                
+                My Name is {item.firstName} {item.lastName} and my age is {item.age}. <br /> {item.info}
+              </p>
             </Card>
           );
         })}

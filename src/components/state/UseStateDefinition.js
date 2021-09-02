@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Card from '../UI/Card';
 
-const State = () => {
+const UseStateDefinition = () => {
   const [variable, setVariable] = useState('Initial value');
 
   const clickHandler = () => {
@@ -48,6 +48,56 @@ const State = () => {
         </li>
       </ul>
       <h4>useState</h4>
+      <ul>
+        <li>
+        UseState registers some State, so some value as a State, for the component instance in which it is being called. If a component is used multiple times, each instance has its own state. 
+        </li>
+        <li>
+        whenever State changes
+
+because we click a button, in this case
+
+it's only this component function
+
+and only that specific instance
+
+where this component is being used
+
+where React will re-evaluate it.
+        </li>
+        <li>
+        React keeps track
+
+of when we call useState in a given component instance
+
+for the first time.
+
+And when we call it for the first time ever,
+
+it'll take that argument as an initial value.
+
+But if a component is then re-executed
+
+because of such a State change, for example,
+
+React will not reinitialize the State.
+
+Instead, it will detect that this State had been initialized
+
+in the past, and it will just grab the latest State
+
+which is based on some State update, for example,
+
+and give us that State instead.
+
+So this initial value is really only considered
+
+when this component function is being executed
+
+for the first time, for a given component instance.
+        </li>
+        <li>You can update states for whatever reason you may have, (setTimeout, http requests, ecc.). It's not limited to user inputs.</li>
+      </ul>
       <p>
         useState wants a default state value, because with useState we basically
         create a special kind of variable, a variable where changes will lead
@@ -91,6 +141,50 @@ const State = () => {
         again. And then it will draw any changes which it's detects compared to
         the last time it evaluated this onto the screen.
       </p>
+      <p>And this is another key concept in React.
+
+If you have data, which might change,
+
+and where changes to that data should be reflected
+
+on the user interface
+
+then you need state,
+
+because a regular variables will not do the trick.
+
+With state, however you can set and change values.
+
+And when they do change,
+
+React will re-evaluate the component
+
+in which the state was registered.
+
+And only that component, by the way,
+
+not any other components,
+
+just this component in which this state was registered.</p>
+<p>using State is simple though.
+
+You just register State with useState,
+
+you always get back two values;
+
+the value itself and the updating function.
+
+You call the updating function
+
+whenever the State should change,
+
+and you use that first element
+
+whenever you wanna use the State value,
+
+like here for outputting it in the JSX code.
+
+And React, will do the rest</p>
       <Card>
         <p>Click on button to update variable value:</p>
         <p>
@@ -101,4 +195,4 @@ const State = () => {
     </div>
   );
 };
-export default State;
+export default UseStateDefinition;
