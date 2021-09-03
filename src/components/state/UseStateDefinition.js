@@ -97,6 +97,15 @@ when this component function is being executed
 for the first time, for a given component instance.
         </li>
         <li>You can update states for whatever reason you may have, (setTimeout, http requests, ecc.). It's not limited to user inputs.</li>
+        <li>You can call useState more than once.
+
+You can have multiple States, multiple States slices
+
+or State pieces per component.
+
+And all of these States inside of one at the same component
+
+will then all to be totally separated from each other.</li>
       </ul>
       <p>
         useState wants a default state value, because with useState we basically
