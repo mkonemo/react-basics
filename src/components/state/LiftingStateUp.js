@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Card from './Component';
+
+
 const LiftingStateUp = () => {
   return (
     <div>
@@ -40,6 +43,13 @@ that might be the app component,
 
 but that could also be another component.</li>
       </ul>
+      <Card>
+        <p>Click on button to update variable value:</p>
+        <p>
+          <i>{variable}</i>
+        </p>
+        <button onClick={clickHandler}>Click to update the state</button>
+      </Card>
     </div>
   );
 };

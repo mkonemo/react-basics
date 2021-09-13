@@ -37,7 +37,7 @@
     "scope": "javascript,typescript",
     "prefix": "import",
     "body": [
-      "import Component from './Component';",
+      "import Component from './components';",
       "$1"
     ],
     "description": "Import Component"
