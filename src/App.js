@@ -3,6 +3,8 @@ import Card from './components/UI/Card';
 
 import Props from './components/props/Props';
 import UseStateDefinition from './components/state/UseStateDefinition';
+import LiftingStateUp from './components/state/LiftingStateUp';
+
 
 import DateExample from './components/date/DateExample';
 import Json from './components/json/Json';
@@ -32,6 +34,10 @@ const App = () => {
         </li>
         <li>
           <UseStateDefinition />
+        </li>
+        
+        <li>
+          <LiftingStateUp />
         </li>
       </ol>
       <h2>Utilities</h2>
