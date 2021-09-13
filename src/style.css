@@ -10,16 +10,20 @@ img {
 }
 
 h2 {
-  margin-top: 2em;
+  margin-top: 2rem;
   display: block;
   border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
 }
 
 h3 {
-  margin-top: 1.5em;
+  margin-top: 1.5rem;
 }
 
 ol>li::marker {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.2rem;
+}
+
+div {
+  padding: .5rem;
 }

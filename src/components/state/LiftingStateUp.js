@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from './Component';
+import Card from '../UI/Card';
 
 
 const LiftingStateUp = () => {
@@ -43,12 +43,10 @@ that might be the app component,
 
 but that could also be another component.</li>
       </ul>
+      <br />
       <Card>
-        <p>Click on button to update variable value:</p>
-        <p>
-          <i>{variable}</i>
-        </p>
-        <button onClick={clickHandler}>Click to update the state</button>
+        <p>This function is defined on the App component, and then passed to this component via props:</p>
+        
       </Card>
     </div>
   );
