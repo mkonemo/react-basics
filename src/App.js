@@ -14,6 +14,16 @@ import UpdateState from './components/state/UpdateState';
 import './style.css';
 
 const App = () => {
+
+const liftStateUpHandler = (enteredTextData) => {
+  const textData = {
+    ...enteredTextData,
+    id: Math.random().toString()
+  }
+console.log(textData);
+
+} 
+
   return (
     <div>
       <h1>
@@ -37,7 +47,7 @@ const App = () => {
         </li>
         
         <li>
-          <LiftingStateUp />
+          <LiftingStateUp onLiftStateUp={liftStateUpHandler} />
         </li>
       </ol>
       <h2>Utilities</h2>

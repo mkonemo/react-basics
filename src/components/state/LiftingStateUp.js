@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Card from '../UI/Card';
 
 
-const LiftingStateUp = () => {
+const LiftingStateUp = (props) => {
+  const [enteredText, setEnteredText] = useState('');
+
+  const textChangeHandler = event => {
+    setEnteredText(event.target.value);
+  };
+
+  const submitHandler = event => {
+    event.preventDefault();
+    const textData = {
+      text: enteredText
+    };
+    props.onLiftStateUp(textData);
+    setEnteredText('');
+  };
+
   return (
     <div>
       <h3>Lifting State Up</h3>
@@ -45,8 +60,12 @@ but that could also be another component.</li>
       </ul>
       <br />
       <Card>
-        <p>This function is defined on the App component, and then passed to this component via props:</p>
-        
+        <p>This function is defined on the App component, and then passed to this component via props.<br /> The entered text is logged into the console:</p>
+        <form onSubmit={submitHandler}>
+        <label>Example: </label>
+          <input type="text" value={enteredText} onChange={textChangeHandler} />
+          <button type="submit">Add text</button>
+        </form>
       </Card>
     </div>
   );
