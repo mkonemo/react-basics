@@ -44,6 +44,14 @@ const App = () => {
         <li>
           <LiftingStateUp onInputText={inputTextHandler} />
         </li>
+        <li>
+          <h3>Controlled component</h3>
+          <p>A controlled component is a normal component. The peculiarity is that in that case there is a value handled by its parent component. Both the value, as well as changes to the value
+
+are not handled in the component itself
+
+but in a parent component.</p>
+        </li>
       </ol>
       <h2>Utilities</h2>
       <ol>
