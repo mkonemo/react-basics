@@ -4,19 +4,13 @@ import Card from '../UI/Card';
 
 
 const LiftingStateUp = (props) => {
-  const [enteredText, setEnteredText] = useState('');
-
-  const textChangeHandler = event => {
-    setEnteredText(event.target.value);
-  };
-
-  const submitHandler = event => {
-    event.preventDefault();
+  const inputTextDataHandler = (enteredTextData) => {
     const textData = {
-      text: enteredText
-    };
-    props.onLiftStateUp(textData);
-    setEnteredText('');
+      ...enteredTextData,
+      id: Math.random().toString()
+    }
+    props.onAddExpense(textData);
+    
   };
 
   return (
@@ -59,14 +53,7 @@ that might be the app component,
 but that could also be another component.</li>
       </ul>
       <br />
-      <Card>
-        <p>This function is defined on the App component, and then passed to this component via props.<br /> The entered text is logged into the console:</p>
-        <form onSubmit={submitHandler}>
-        <label>Example: </label>
-          <input type="text" value={enteredText} onChange={textChangeHandler} />
-          <button type="submit">Add text</button>
-        </form>
-      </Card>
+      <LiftingStateExample onInputTextDaata={inputTextDataHandler}/>
     </div>
   );
 };
