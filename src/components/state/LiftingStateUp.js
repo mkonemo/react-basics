@@ -9,7 +9,7 @@ const LiftingStateUp = (props) => {
       ...enteredTextData,
       id: Math.random().toString()
     }
-    props.onAddExpense(textData);
+    props.onInputText(textData);
     
   };
 
@@ -53,7 +53,7 @@ that might be the app component,
 but that could also be another component.</li>
       </ul>
       <br />
-      <LiftingStateExample onInputTextDaata={inputTextDataHandler}/>
+      <LiftingStateExample onInputTextData={inputTextDataHandler}/>
     </div>
   );
 };

@@ -15,14 +15,9 @@ import './style.css';
 
 const App = () => {
 
-const liftStateUpHandler = (enteredTextData) => {
-  const textData = {
-    ...enteredTextData,
-    id: Math.random().toString()
-  }
-console.log(textData);
-
-} 
+  const inputTextHandler = inputText => {
+    console.log(inputText);
+  };
 
   return (
     <div>
@@ -47,7 +42,7 @@ console.log(textData);
         </li>
         
         <li>
-          <LiftingStateUp onLiftStateUp={liftStateUpHandler} />
+          <LiftingStateUp onInputText={inputTextHandler} />
         </li>
       </ol>
       <h2>Utilities</h2>

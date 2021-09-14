@@ -10,10 +10,10 @@ const LiftingStateExample = (props) => {
 
   const submitHandler = event => {
     event.preventDefault();
-    const textInput = {
+    const userInput = {
       text: enteredText
     };
-    props.onInputTextData(textInput);
+    props.onInputTextData(userInput);
     setEnteredText('');
   };
 
