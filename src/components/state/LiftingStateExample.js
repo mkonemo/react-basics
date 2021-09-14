@@ -20,7 +20,11 @@ const LiftingStateExample = (props) => {
   return (
     <div>
       <Card>
-        <p>This function is defined on the App component, and then passed to this component via props.<br /> The entered text is logged into the console:</p>
+        <p>In this example a <code>console.log</code> function is defined on the App component, and then passed to its child and grandchild components via props.<br /> The text is entered on the grandchild component, then passed up to the parent component and to the <em>App.js</em> component.</p>
+        <p>This is the functions' flow:<br/>
+        <code>App.js &gt; inputTextHandler (function) &gt; onInputText (prop) &gt;<br /> LiftingStateUp.js &gt; inputTextDataHandler (function) &gt; onInputTextData (prop) &gt;<br /> LiftingStateExample.js  </code></p>
+        <p>This is the data flow:<br/>
+        <code>LiftingStateExample.js &gt; props.onInputTextData(userInput); <br /> LiftingStateUp.js &gt; props.onInputText(textData) &gt; <br /> App.js (inputText)  </code></p>
         <form onSubmit={submitHandler}>
         <label>Example: </label>
           <input type="text" value={enteredText} onChange={textChangeHandler} />
