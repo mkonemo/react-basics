@@ -152,7 +152,7 @@ you should call it and pass in a function to that function (see example).
       <Card>
         <p>Click on button to update variable value:</p>
         <p>
-          <i>{variable}</i>
+          <samp>{variable}</samp>
         </p>
         <button onClick={clickHandler}>Click to update the state</button>
       </Card>
