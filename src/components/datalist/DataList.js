@@ -51,7 +51,7 @@ const DataList = (props) => {
       <Card>
         <ul>
           {sampleExpenses.map((expense) => (
-            <li key={expense.id}>
+            <li key={expense.id.toString()}>
               {expense.title} {expense.amount}&euro;, ({expense.date})
             </li>
           ))}
