@@ -32,10 +32,7 @@ const DataList = (props) => {
       date: new Date(2021, 5, 12).toDateString(),
     },
   ];
-
   
-
-   
 
   return (
     <div>
@@ -43,7 +40,7 @@ const DataList = (props) => {
       <Card>
         <ul>
           {sampleData.map((item) => (
-            <li>
+            <li key={item.id}>             
               {item.firstName} {item.lastName}, ({item.age} anni).
               <br />
               {item.info}
@@ -54,7 +51,7 @@ const DataList = (props) => {
       <Card>
         <ul>
           {sampleExpenses.map((expense) => (
-            <li>
+            <li key={expense.id}>
               {expense.title} {expense.amount}&euro;, ({expense.date})
             </li>
           ))}
@@ -62,7 +59,8 @@ const DataList = (props) => {
       </Card>
 
       <Card>
-        
+        <strong>Please note:</strong> React needs an index to identify the specific elements rendered on the list, so you need to add the "key" prop to each rendered element, with a unique value.<br />
+        Usually you can use an element id or a random number.
           
       </Card>
     </div>
