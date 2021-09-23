@@ -6,11 +6,13 @@ const DataList = (props) => {
 
   const sampleData = [
     {
+      id: 'i1',
       firstName: 'Mko',
       lastName: 'Nemo',
       age: 48,
     },
     {
+      id: 'i2',
       firstName: 'MIrko',
       lastName: 'Niciarelli',
       age: 48,
@@ -51,7 +53,7 @@ const DataList = (props) => {
       <Card>
         <ul>
           {sampleExpenses.map((expense) => (
-            <li key={expense.id.toString()}>
+            <li key={expense.id}>
               {expense.title} {expense.amount}&euro;, ({expense.date})
             </li>
           ))}
