@@ -5,12 +5,33 @@ import Card from '../UI/Card';
 const ConditionalContent = () => {
   return (
     <div>
-      <h3>Conditional content (3 different examples)</h3>
-      <Card>
-        <pre><code>let conditionalContent = &lt;p&gt;Default content&lt;/p&gt;
-          if (condition = true) &lbrace;
-            conditionalContent = &lt;p&gt;Content if condition is true&lt;/p&gt;
-          &rbrace;
+      <h3>Conditional content</h3>
+      <h4>Exemple #1</h4>
+      <Card className='codeBlock'>
+        <pre><code>
+          {`
+          let conditionalContent = <p>Default content</p>
+          if (condition = true) {
+            conditionalContent = <p>Content if condition is true</p>
+          }
+          `}
+        </code></pre>
+      </Card>
+      <h4>Exemple #2</h4>
+      <Card className='codeBlock'>
+        <pre><code>
+          {`
+          {condition = true ? <p>Content if true</p> : <p>Content if false</p>}
+          `}
+        </code></pre>
+      </Card>
+      <h4>Exemple #3</h4>
+      <Card className='codeBlock'>
+        <pre><code>
+          {`
+          {condition = true && <p>Content if true</p>}
+          {condition = false && <p>Content if false</p>}
+          `}
         </code></pre>
       </Card>
     </div>

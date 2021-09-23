@@ -27,3 +27,7 @@ ol>li::marker {
 div {
   padding: .5rem;
 }
+
+.codeBlock {
+  font-family: monospace;
+}
