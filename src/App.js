@@ -11,6 +11,8 @@ import Json from './components/json/Json';
 import ClickEvent from './components/events/ClickEvent';
 import UpdateState from './components/state/UpdateState';
 import Datalist from './components/datalist/DataList';
+import ConditionalContent from './components/conditionalContent/ConditionalContent';
+
 
 
 import './style.css';
@@ -98,6 +100,7 @@ but in a parent component.</p>
         <li>
           <Datalist />
         </li>
+        <li><ConditionalContent /></li>
       </ol>
     </div>
   );
