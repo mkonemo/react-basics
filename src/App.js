@@ -11,6 +11,8 @@ import ClickEvent from './components/events/ClickEvent';
 import UpdateState from './components/state/UpdateState';
 import Datalist from './components/datalist/DataList';
 import ConditionalContent from './components/conditionalContent/ConditionalContent';
+import ShowElements from './components/showElements/ShowElements';
+
 
 import './style.css';
 
