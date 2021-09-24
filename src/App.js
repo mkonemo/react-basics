@@ -5,7 +5,6 @@ import Props from './components/props/Props';
 import UseStateDefinition from './components/state/UseStateDefinition';
 import LiftingStateUp from './components/state/LiftingStateUp';
 
-
 import DateExample from './components/date/DateExample';
 import Json from './components/json/Json';
 import ClickEvent from './components/events/ClickEvent';
@@ -13,13 +12,10 @@ import UpdateState from './components/state/UpdateState';
 import Datalist from './components/datalist/DataList';
 import ConditionalContent from './components/conditionalContent/ConditionalContent';
 
-
-
 import './style.css';
 
-const App = () => {  
-
-  const inputTextHandler = inputText => {
+const App = () => {
+  const inputTextHandler = (inputText) => {
     console.log(inputText);
   };
 
@@ -44,17 +40,18 @@ const App = () => {
         <li>
           <UseStateDefinition />
         </li>
-        
+
         <li>
           <LiftingStateUp onInputText={inputTextHandler} />
         </li>
         <li>
           <h3>Controlled component</h3>
-          <p>A controlled component is a normal component. The peculiarity is that in that case there is a value handled by its parent component. Both the value, as well as changes to the value
-
-are not handled in the component itself
-
-but in a parent component.</p>
+          <p>
+            A controlled component is a normal component. The peculiarity is
+            that in that case there is a value handled by its parent component.
+            Both the value, as well as changes to the value are not handled in
+            the component itself but in a parent component.
+          </p>
         </li>
       </ol>
       <h2>Utilities</h2>
@@ -100,7 +97,9 @@ but in a parent component.</p>
         <li>
           <Datalist />
         </li>
-        <li><ConditionalContent /></li>
+        <li>
+          <ConditionalContent />
+        </li>
       </ol>
     </div>
   );
