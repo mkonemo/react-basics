@@ -100,6 +100,9 @@ const App = () => {
         <li>
           <ConditionalContent />
         </li>
+        <li>
+          <ShowElements />
+        </li>
       </ol>
     </div>
   );
