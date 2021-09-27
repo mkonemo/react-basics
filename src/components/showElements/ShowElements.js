@@ -19,7 +19,7 @@ const ShowElements = () => {
   return (
     <div>
       
-      {!isShown && <button className={example-button} onClick={startShowHandler}>Show element</button>}
+      {!isShown && <button className={exampleButton} onClick={startShowHandler}>Show element</button>}
       {isShown && <button onClick={stopShowHandler}>Hide element</button>}
       <br />
       <br />
