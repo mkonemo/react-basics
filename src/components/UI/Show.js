@@ -1,9 +1,6 @@
-import React, {useState} from 'react';
-
-
+import React, { useState } from 'react';
 
 const Show = (props) => {
-  
   const [isShown, setIsShown] = useState(false);
 
   const startShowHandler = () => {
@@ -14,7 +11,13 @@ const Show = (props) => {
     setIsShown(false);
   };
 
-  return <div>{props.children}</div>
-}
+  return (
+    <div>
+      {!isShown && <button onClick={startShowHandler}>+</button>}
+      {isShown && <button onClick={stopShowHandler}>-</button>}
+      {isShown && props.children}
+    </div>
+  );
+};
 
 export default Show;

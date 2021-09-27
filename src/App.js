@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Card from './components/UI/Card';
+import Show from './components/UI/Show';
+
 
 import Props from './components/props/Props';
 import UseStateDefinition from './components/state/UseStateDefinition';
@@ -35,14 +37,14 @@ const App = () => {
         </li>
         <li>
           <h3>Composition</h3>
-          <p>
+          <Show><p>
             Generally, the approach of building a user interface from smaller
             building blocks is called composition.
-          </p>
+          </p></Show>
           )
         </li>
         <li>
-          <UseStateDefinition />
+          <Show><UseStateDefinition /></Show>
         </li>
 
         <li>
