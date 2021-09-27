@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './components/UI/Card';
 
 import Props from './components/props/Props';
@@ -13,12 +13,21 @@ import Datalist from './components/datalist/DataList';
 import ConditionalContent from './components/conditionalContent/ConditionalContent';
 import ShowElements from './components/showElements/ShowElements';
 
-
 import './style.css';
 
 const App = () => {
   const inputTextHandler = (inputText) => {
     console.log(inputText);
+  };
+
+  const [isShown, setIsShown] = useState(false);
+
+  const startShowHandler = () => {
+    setIsShown(true);
+  };
+
+  const stopShowHandler = () => {
+    setIsShown(false);
   };
 
   return (
@@ -30,7 +39,9 @@ const App = () => {
       <h2>Basics</h2>
       <ol>
         <li>
-          <Props />
+          {!isShown && <button onClick={startShowHandler}>+</button>}
+          {isShown && <button onClick={stopShowHandler}>-</button>}
+          {isShown && <Props />}
         </li>
         <li>
           <h3>Composition</h3>
