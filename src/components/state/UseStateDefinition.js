@@ -11,7 +11,7 @@ const UseStateDefinition = () => {
 
   return (
     <div>
-      <h3>State and React hooks</h3>
+      
       <p>
         If you have a variable in your component function and the that variable
         changes, React ignores it. It doesn't care about that, that code

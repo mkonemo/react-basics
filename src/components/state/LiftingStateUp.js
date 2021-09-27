@@ -18,7 +18,7 @@ const LiftingStateUp = (props) => {
 
   return (
     <div>
-      <h3>Lifting State Up</h3>
+      
       <ul>
         <li>
           We can only communicate (pass data) from parent to child and from

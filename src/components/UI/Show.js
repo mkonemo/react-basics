@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './Show.css';
+
 
 const Show = (props) => {
   const [isShown, setIsShown] = useState(false);
