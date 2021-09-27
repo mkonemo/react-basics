@@ -5,24 +5,24 @@ import Card from '../UI/Card';
 const ShowElements = () => {
   const [isShown, setIsShown] = useState(false);
 
-  const ShowHandler = () => {
-    console.log('1' + isShown);
+  const startShowHandler = () => {
+    setIsShown(true);
+  };
 
-    isShown = true ? (isShown = false) : (isShown = true);
-
-    console.log('2' + isShown);
+  const stopShowHandler = () => {
+    setIsShown(false);
   };
 
   return (
     <div>
       <h3>Show elements</h3>
-      {!isShown && <button onClick={ShowHandler}>Show element</button>}
-      {isShown && <button onClick={ShowHandler}>Hide element</button>}
+      {!isShown && <button onClick={startShowHandler}>Show element</button>}
+      {isShown && <button onClick={stopShowHandler}>Hide element</button>}
       <br />
       <br />
-      <Card>
+      {isShown && <Card><button type='button' onClick={stopShowHandler}>x</button>
         <h4>Element shown</h4>
-      </Card>
+      </Card>}
     </div>
   );
 };
