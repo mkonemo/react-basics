@@ -20,15 +20,7 @@ const App = () => {
     console.log(inputText);
   };
 
-  const [isShown, setIsShown] = useState(false);
-
-  const startShowHandler = () => {
-    setIsShown(true);
-  };
-
-  const stopShowHandler = () => {
-    setIsShown(false);
-  };
+  
 
   return (
     <div>
@@ -39,17 +31,15 @@ const App = () => {
       <h2>Basics</h2>
       <ol>
         <li>
-        <h3>Props example {!isShown && <button onClick={startShowHandler}>+</button>}
-          {isShown && <button onClick={stopShowHandler}>-</button>}</h3>
-          {isShown && <Props />}
+          <Props />
         </li>
         <li>
-          <h3>Composition {!isShown && <button onClick={startShowHandler}>+</button>}
-          {isShown && <button onClick={stopShowHandler}>-</button>}</h3>
-          {isShown && <p>
+          <h3>Composition</h3>
+          <p>
             Generally, the approach of building a user interface from smaller
             building blocks is called composition.
-          </p>}
+          </p>
+          )
         </li>
         <li>
           <UseStateDefinition />
