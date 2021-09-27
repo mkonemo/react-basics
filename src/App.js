@@ -39,16 +39,17 @@ const App = () => {
       <h2>Basics</h2>
       <ol>
         <li>
-          {!isShown && <button onClick={startShowHandler}>+</button>}
-          {isShown && <button onClick={stopShowHandler}>-</button>}
+        <h3>Props example {!isShown && <button onClick={startShowHandler}>+</button>}
+          {isShown && <button onClick={stopShowHandler}>-</button>}</h3>
           {isShown && <Props />}
         </li>
         <li>
-          <h3>Composition</h3>
-          <p>
+          <h3>Composition {!isShown && <button onClick={startShowHandler}>+</button>}
+          {isShown && <button onClick={stopShowHandler}>-</button>}</h3>
+          {isShown && <p>
             Generally, the approach of building a user interface from smaller
             building blocks is called composition.
-          </p>
+          </p>}
         </li>
         <li>
           <UseStateDefinition />

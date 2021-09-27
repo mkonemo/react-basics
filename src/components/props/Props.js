@@ -8,7 +8,7 @@ const Props = () => {
   ];
   return (
     <div>
-      <h3>Props example</h3>
+      
       <p>
         Props are "custom HTML properties" defined in a root element, and passed
         to its descendant components.
