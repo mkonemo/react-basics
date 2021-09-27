@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import './ShowElements.css';
+
+
 import Card from '../UI/Card';
 
 const ShowElements = () => {
@@ -16,7 +19,7 @@ const ShowElements = () => {
   return (
     <div>
       
-      {!isShown && <button onClick={startShowHandler}>Show element</button>}
+      {!isShown && <button className={example-button} onClick={startShowHandler}>Show element</button>}
       {isShown && <button onClick={stopShowHandler}>Hide element</button>}
       <br />
       <br />
