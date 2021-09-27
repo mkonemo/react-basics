@@ -19,7 +19,7 @@ const Props = () => {
   return (
     <div>
       <h3>
-        Props example{' '}
+        Props example
         {!isShown && <button onClick={startShowHandler}>+</button>}
         {isShown && <button onClick={stopShowHandler}>-</button>}
       </h3>
