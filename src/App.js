@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Card from './components/UI/Card';
 import Show from './components/UI/Show';
 
-
 import Props from './components/props/Props';
 import UseStateDefinition from './components/state/UseStateDefinition';
 import LiftingStateUp from './components/state/LiftingStateUp';
@@ -22,8 +21,6 @@ const App = () => {
     console.log(inputText);
   };
 
-  
-
   return (
     <div>
       <h1>
@@ -33,18 +30,23 @@ const App = () => {
       <h2>Basics</h2>
       <ol>
         <li>
-          <Props />
+          <Show>
+            <Props />
+          </Show>
         </li>
         <li>
           <h3>Composition</h3>
-          <Show><p>
-            Generally, the approach of building a user interface from smaller
-            building blocks is called composition.
-          </p></Show>
-          )
+          <Show>
+            <p>
+              Generally, the approach of building a user interface from smaller
+              building blocks is called composition.
+            </p>
+          </Show>
         </li>
         <li>
-          <Show><UseStateDefinition /></Show>
+          <Show>
+            <UseStateDefinition />
+          </Show>
         </li>
 
         <li>
