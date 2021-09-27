@@ -9,7 +9,7 @@ const Json = () => {
     return (
       
       <div>
-        <h3>Import data from external JSON file</h3>
+        
         {sampleData.map((item, i) => {
           return (
             <Card>

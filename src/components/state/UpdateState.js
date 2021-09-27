@@ -11,7 +11,7 @@ const UpdateState = (props) => {
 
   return (
     <div>
-      <h3>useState update example</h3>
+      
       <Card>
       <p>
         Click button to update:

@@ -5,7 +5,7 @@ import Card from '../UI/Card';
 const ConditionalContent = () => {
   return (
     <div>
-      <h3>Conditional content</h3>
+      
       <h4>Exemple #1</h4>
       <Card className='codeBlock'>
         <pre><code>

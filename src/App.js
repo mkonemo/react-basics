@@ -60,12 +60,14 @@ const App = () => {
           </li>
           <li>
             <h3>Controlled component</h3>
-            <p>
-              A controlled component is a normal component. The peculiarity is
-              that in that case there is a value handled by its parent
-              component. Both the value, as well as changes to the value are not
-              handled in the component itself but in a parent component.
-            </p>
+            <Show>
+              <p>
+                A controlled component is a normal component. The peculiarity is
+                that in that case there is a value handled by its parent
+                component. Both the value, as well as changes to the value are
+                not handled in the component itself but in a parent component.
+              </p>
+            </Show>
           </li>
         </ol>
       </Show>
@@ -74,50 +76,75 @@ const App = () => {
         <ol>
           <li>
             <h3>Firebase storage</h3>
-            <p>
-              A storage for images and other files is available{' '}
-              <a
-                href="https://console.firebase.google.com/u/0/project/reacttest-8afe6/storage/reacttest-8afe6.appspot.com/files/~2F"
-                target="_blank"
-              >
-                here
-              </a>
-            </p>
+            <Show>
+              <p>
+                A storage for images and other files is available{' '}
+                <a
+                  href="https://console.firebase.google.com/u/0/project/reacttest-8afe6/storage/reacttest-8afe6.appspot.com/files/~2F"
+                  target="_blank"
+                >
+                  here
+                </a>
+              </p>
+            </Show>
           </li>
           <li>
-            <DateExample />
+            <h3>Date formatting</h3>
+            <Show>
+              <DateExample />
+            </Show>
           </li>
           <li>
             <h3>Custom HTML element: Card container example</h3>
-            <p>
-              This is a custom HTML element, built as a component and used as a
-              shared container.
-            </p>
-            <Card>
-              See{' '}
-              <pre>
-                <code>./components/UI/Card.js</code>
-              </pre>{' '}
-              for an example
-            </Card>
+            <Show>
+              <p>
+                This is a custom HTML element, built as a component and used as
+                a shared container.
+              </p>
+              <Card>
+                See{' '}
+                <pre>
+                  <code>./components/UI/Card.js</code>
+                </pre>{' '}
+                for an example
+              </Card>
+            </Show>
           </li>
           <li>
-            <ClickEvent />
+            <h3>Add simple event on click button</h3>
+            <Show>
+              <ClickEvent />
+            </Show>
           </li>
           <li>
-            <UpdateState variable="Initial value" />
+            <h3>useState update example</h3>
+            <Show>
+              <UpdateState variable="Initial value" />
+            </Show>
           </li>
           <li>
-            <Json />
+            <h3>Import data from external JSON file</h3>
+            <Show>
+              <Json />
+            </Show>
           </li>
           <li>
-            <Datalist />
+            <h3>Rendering lists of data</h3>
+            <Show>
+              <Datalist />
+            </Show>
           </li>
           <li>
-            <ConditionalContent />
+            <h3>Conditional content</h3>
+            <Show>
+              <ConditionalContent />
+            </Show>
           </li>
           <li>
-            <ShowElements />
+            <h3>Show elements</h3>
+            <Show>
+              <ShowElements />
+            </Show>
           </li>
         </ol>
       </Show>

@@ -10,7 +10,7 @@ const DateExample = () => {
 
   return (
     <div>
-      <h3>Date formatting</h3>
+      
       <Card>
         <div>{month}</div>
         <div>{year}</div>

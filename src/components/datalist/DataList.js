@@ -36,7 +36,7 @@ const DataList = (props) => {
 
   return (
     <div>
-      <h3>Rendering lists of data</h3>
+      
       <Card>
         <ul>
           {sampleData.map((item) => (

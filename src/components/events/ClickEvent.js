@@ -9,7 +9,7 @@ const ClickEvent = () => {
   }
   return (
     <div>
-      <h3>Add simple event on click button</h3>
+      
     <Card>
       <p>Click button to get an event on console log.</p>
       <button onClick={clickHandler}>Click</button>
