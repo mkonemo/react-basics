@@ -15,12 +15,10 @@ const Props = () => {
           Props are "custom HTML properties" defined in a root element, and
           passed to its descendant components.
         </p>
-      )
         <PropsComponent
           title={exampleProps[0].title}
           description={exampleProps[0].desc}
         />
-      )
         <p>
           <pre>children</pre> is a reserved name and the value of this special
           children prop will always be the content between the opening and
@@ -28,7 +26,6 @@ const Props = () => {
           <br />
           For an example look at the Card component in UI.
         </p>
-      )
     </div>
   );
 };
