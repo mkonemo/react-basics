@@ -27,7 +27,7 @@ const App = () => {
         React{' '}
         <img src="https://firebasestorage.googleapis.com/v0/b/react-basics-2ff51.appspot.com/o/logo192.png?alt=media&token=a484171c-797a-4a94-a7f7-ee9cb914a2e3" />
       </h1>
-      <h2>Basics</h2>
+      <h2><i class="fad fa-react"> </i>Basics</h2>
       <Show>
         <ol>
           <li>
@@ -65,7 +65,7 @@ const App = () => {
           </li>
         </ol>
       </Show>
-      <h2>Utilities</h2>
+      <h2><i class="fas fa-toolbox"></i> Utilities</h2>
       <Show>
         <ol>
           <li>
