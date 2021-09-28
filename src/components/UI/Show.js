@@ -16,9 +16,9 @@ const Show = (props) => {
   return (
     <div>
       {!isShown && <h3 onClick={startShowHandler}>{props.title}</h3>}
-      {!isShown && <button onClick={startShowHandler}>+</button>}
+      {!isShown && <button onClick={startShowHandler}><i class="fas fa-chevron-down"></i></button>}
       {isShown && <h3 onClick={stopShowHandler}>{props.title}</h3>}
-      {isShown && <button onClick={stopShowHandler}>-</button>}
+      {isShown && <button onClick={stopShowHandler}><i class="fas fa-chevron-up"></i></button>}
       {isShown && props.children}
     </div>
   );
