@@ -87,8 +87,7 @@ const App = () => {
             </Show>
           </li>
           <li>
-            <h3>Custom HTML element: Card container example</h3>
-            <Show>
+            <Show title='Custom HTML element: Card container example'>
               <p>
                 This is a custom HTML element, built as a component and used as
                 a shared container.
