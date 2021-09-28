@@ -31,14 +31,12 @@ const App = () => {
       <Show>
         <ol>
           <li>
-            <h3>Props example</h3>
-            <Show>
+            <Show title="Props example">
               <Props />
             </Show>
           </li>
           <li>
-            <h3>Composition</h3>
-            <Show>
+            <Show title="Composition">
               <p>
                 Generally, the approach of building a user interface from
                 smaller building blocks is called composition.
@@ -46,21 +44,17 @@ const App = () => {
             </Show>
           </li>
           <li>
-            <h3>State and React hooks</h3>
-            <Show>
+            <Show title="State and React hooks">
               <UseStateDefinition />
             </Show>
           </li>
-
           <li>
-            <h3>Lifting State Up</h3>
-            <Show>
+            <Show title="Lifting State Up">
               <LiftingStateUp onInputText={inputTextHandler} />
             </Show>
           </li>
           <li>
-            <h3>Controlled component</h3>
-            <Show>
+            <Show title='Controlled component'>
               <p>
                 A controlled component is a normal component. The peculiarity is
                 that in that case there is a value handled by its parent
@@ -75,8 +69,7 @@ const App = () => {
       <Show>
         <ol>
           <li>
-            <h3>Firebase storage</h3>
-            <Show>
+            <Show title='Firebase storage'>
               <p>
                 A storage for images and other files is available{' '}
                 <a
@@ -89,8 +82,7 @@ const App = () => {
             </Show>
           </li>
           <li>
-            <h3>Date formatting</h3>
-            <Show>
+            <Show title='Date formatting'>
               <DateExample />
             </Show>
           </li>
@@ -111,38 +103,32 @@ const App = () => {
             </Show>
           </li>
           <li>
-            <h3>Add simple event on click button</h3>
-            <Show>
+            <Show title='Add simple event on click button'>
               <ClickEvent />
             </Show>
           </li>
           <li>
-            <h3>useState update example</h3>
-            <Show>
+            <Show title='useState update example'>
               <UpdateState variable="Initial value" />
             </Show>
           </li>
           <li>
-            <h3>Import data from external JSON file</h3>
-            <Show>
+            <Show title='Import data from external JSON file'>
               <Json />
             </Show>
           </li>
           <li>
-            <h3>Rendering lists of data</h3>
-            <Show>
+            <Show title='Rendering lists of data'>
               <Datalist />
             </Show>
           </li>
           <li>
-            <h3>Conditional content</h3>
-            <Show>
+            <Show title='Conditional content'>
               <ConditionalContent />
             </Show>
           </li>
           <li>
-            <h3>Show elements</h3>
-            <Show>
+            <Show title='Show elements'>
               <ShowElements />
             </Show>
           </li>
