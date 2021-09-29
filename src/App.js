@@ -24,10 +24,12 @@ const App = () => {
   return (
     <div>
       <h1>
-        React{' '}
-        <img src="https://firebasestorage.googleapis.com/v0/b/react-basics-2ff51.appspot.com/o/logo192.png?alt=media&token=a484171c-797a-4a94-a7f7-ee9cb914a2e3" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/react-basics-2ff51.appspot.com/o/logo192.png?alt=media&token=a484171c-797a-4a94-a7f7-ee9cb914a2e3" />{' '}
+        React
       </h1>
-      <h2><i class="fab fa-react"></i> Basics</h2>
+      <h2>
+        <i class="fab fa-react"></i> Basics
+      </h2>
       <Show>
         <ol>
           <li>
@@ -54,7 +56,7 @@ const App = () => {
             </Show>
           </li>
           <li>
-            <Show title='Controlled component'>
+            <Show title="Controlled component">
               <p>
                 A controlled component is a normal component. The peculiarity is
                 that in that case there is a value handled by its parent
@@ -65,13 +67,15 @@ const App = () => {
           </li>
         </ol>
       </Show>
-      <h2><i class="fas fa-toolbox"></i> Utilities</h2>
+      <h2>
+        <i class="fas fa-toolbox"></i> Utilities
+      </h2>
       <Show>
         <ol>
           <li>
-            <Show title='Firebase storage'>
+            <Show title="Firebase storage">
               <p>
-                A storage for images and other files is available{' '}
+                A storage for images and other files is available
                 <a
                   href="https://console.firebase.google.com/u/0/project/reacttest-8afe6/storage/reacttest-8afe6.appspot.com/files/~2F"
                   target="_blank"
@@ -82,18 +86,18 @@ const App = () => {
             </Show>
           </li>
           <li>
-            <Show title='Date formatting'>
+            <Show title="Date formatting">
               <DateExample />
             </Show>
           </li>
           <li>
-            <Show title='Custom HTML element: Card container example'>
+            <Show title="Custom HTML element: Card container example">
               <p>
                 This is a custom HTML element, built as a component and used as
                 a shared container.
               </p>
               <Card>
-                See{' '}
+                See
                 <pre>
                   <code>./components/UI/Card.js</code>
                 </pre>{' '}
@@ -102,32 +106,32 @@ const App = () => {
             </Show>
           </li>
           <li>
-            <Show title='Add simple event on click button'>
+            <Show title="Add simple event on click button">
               <ClickEvent />
             </Show>
           </li>
           <li>
-            <Show title='useState update example'>
+            <Show title="useState update example">
               <UpdateState variable="Initial value" />
             </Show>
           </li>
           <li>
-            <Show title='Import data from external JSON file'>
+            <Show title="Import data from external JSON file">
               <Json />
             </Show>
           </li>
           <li>
-            <Show title='Rendering lists of data'>
+            <Show title="Rendering lists of data">
               <Datalist />
             </Show>
           </li>
           <li>
-            <Show title='Conditional content'>
+            <Show title="Conditional content">
               <ConditionalContent />
             </Show>
           </li>
           <li>
-            <Show title='Show elements'>
+            <Show title="Show elements">
               <ShowElements />
             </Show>
           </li>
