@@ -28,7 +28,7 @@ const App = () => {
         React
       </h1>
       <h2>
-        <i class="fab fa-react"></i> Basics
+        <i class="fas fa-code"></i> Basics
       </h2>
       <Show>
         <ol>
