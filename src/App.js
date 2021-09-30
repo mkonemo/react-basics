@@ -33,7 +33,7 @@ const App = () => {
             <h2>
               <i class="fas fa-code"></i> Basics
             </h2>
-            <Show>
+            
               <ol>
                 <li>
                   <Show title="Props example">
@@ -70,14 +70,13 @@ const App = () => {
                   </Show>
                 </li>
               </ol>
-            </Show>
           </div>
 
           <div className="box item2">
             <h2>
               <i class="fab fa-css3"></i> Styles
             </h2>
-            <Show>
+            
               <ol>
                 <li>
                   <Show title="Props example">
@@ -85,7 +84,7 @@ const App = () => {
                   </Show>
                 </li>
               </ol>
-            </Show>
+            
           </div>
         </div>
         <div className="grid-container__item">
@@ -93,7 +92,7 @@ const App = () => {
             <h2>
               <i class="fas fa-toolbox"></i> Utilities
             </h2>
-            <Show>
+            
               <ol>
                 <li>
                   <Show title="Firebase storage">
@@ -159,7 +158,7 @@ const App = () => {
                   </Show>
                 </li>
               </ol>
-            </Show>
+            
           </div>
         </div>
       </div>
