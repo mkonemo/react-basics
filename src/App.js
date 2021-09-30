@@ -28,7 +28,7 @@ const App = () => {
         React
       </h1>
       <div className="grid-container">
-        <div className="grid-container__item">
+        <div className="grid-container__item item1">
           <h2>
             <i class="fas fa-code"></i> Basics
           </h2>
@@ -71,7 +71,23 @@ const App = () => {
             </ol>
           </Show>
         </div>
-        <div className="grid-container__item">
+
+        <div className="grid-container__item item2">
+          <h2>
+            <i class="fas fa-code"></i> Styles
+          </h2>
+          <Show>
+            <ol>
+              <li>
+                <Show title="Props example">
+                  <Props />
+                </Show>
+              </li>              
+            </ol>
+          </Show>
+        </div>
+
+        <div className="grid-container__item item3">
           <h2>
             <i class="fas fa-toolbox"></i> Utilities
           </h2>
