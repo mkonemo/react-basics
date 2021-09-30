@@ -82,6 +82,11 @@ const App = () => {
                   <Props />
                 </Show>
               </li>
+              <li>
+                <Show title="Props example">
+                  <Props />
+                </Show>
+              </li>
             </ol>
           </div>
         </div>
