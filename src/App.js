@@ -78,12 +78,12 @@ const App = () => {
 
             <ol>
               <li>
-                <Show title="Props example">
+                <Show title="Dynamic inline styles">
                   <Props />
                 </Show>
               </li>
               <li>
-                <Show title="Props example">
+                <Show title="Dynamic CSS classes">
                   <Props />
                 </Show>
               </li>
