@@ -21,6 +21,8 @@ body>div {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   grid-gap: 1rem;
+  display: flex;
+  flex-direction: column;
   
 }
 
@@ -28,6 +30,13 @@ body>div {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
   background: #fff;
+}
+
+.item1 {
+  flex: 1;
+}
+.item2 {
+  flex: 1;
 }
 
 img {
