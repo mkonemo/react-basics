@@ -38,6 +38,7 @@ body>div {
 
 .item1 {
   flex: 1;
+  margin-bottom: 2rem;
 }
 .item2 {
   flex: 1;
