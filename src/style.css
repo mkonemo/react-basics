@@ -53,8 +53,12 @@ img {
   vertical-align: initial;
 }
 
+h1 {
+  color: var(--heading-color);
+  padding-left: .5em;
+}
+
 h2 {
-  padding-top: 2rem;
     padding: 2rem 1em 1em 1em;
     display: block;
     color: var(--heading-color);
