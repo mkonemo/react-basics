@@ -1,5 +1,6 @@
 :root {
   --heading-color: #666;
+  --heading-color_alt: #fff;
   padding: 1em;
 }
 
@@ -20,9 +21,7 @@ body>div {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  grid-gap: 1rem;
-  
-  
+  grid-gap: 1rem;  
 }
 
 .grid-container__item {
@@ -54,10 +53,15 @@ img {
 }
 
 h2 {
-  margin-top: 2rem;
-  display: block;
-  border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
-  color: var(--heading-color);
+  padding-top: 2rem;
+    padding: 2rem 1em 1em 1em;
+    display: block;
+    border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
+    color: var(--heading-color);
+    background: #f1ede1;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    margin: 0;
 }
 
 h2 + div > h3 {
