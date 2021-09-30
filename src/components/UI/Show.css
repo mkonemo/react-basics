@@ -5,6 +5,7 @@ button {
   border: 1px rgba(199, 198, 198, 0.25) solid;
   border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 h2 + div > h3 + button {
