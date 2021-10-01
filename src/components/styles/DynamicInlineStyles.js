@@ -1,16 +1,28 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 import Card from '../UI/Card';
 
 const DynamicInlineStyles = () => {
-
   const [isValid, setIsValid] = useState(true);
-  let variable = isValid.toString();
 
+  const stateChangeHandler = () => {
+    setIsValid(!isValid);
+  };
+  let variable = isValid.toString();
   return (
     <div>
-      <Card><p>isValid = '{variable}'</p></Card>
-      <button>Change isValid</button>
+      <Card>
+        <p>
+          The style of the paragraph is set depending on the value of the{' '}
+          <samp>isValid</samp> value.
+        </p>
+        <samp style={{ color: isValid ? 'lime' : 'red' }}>
+          isValid = '{variable}'
+        </samp>
+        <br />
+        <br />
+        <button onClick={stateChangeHandler}>Change isValid</button>
+      </Card>
     </div>
   );
 };
