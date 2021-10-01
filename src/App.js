@@ -42,7 +42,6 @@ const App = () => {
               <h2>
                 <i class="fas fa-code"></i> Basics
               </h2>
-
               <ol>
                 <li>
                   <Show title="Props example">
