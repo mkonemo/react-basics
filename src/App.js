@@ -29,15 +29,13 @@ const App = () => {
   };
   return (
     <div>
-     
       <div id="main" className={`main ${altTheme ? 'alt-theme' : ''}`}>
-      <h1>
-          <i class="fab fa-react"></i> React - A quick reference
-        </h1>
         <button className="btn-theme" onClick={changeThemeHandler}>
           <i class="fas fa-adjust"></i>
         </button>
-        
+        <h1>
+          <i class="fab fa-react"></i> React - A quick reference
+        </h1>
         <div className="grid-container">
           <div className="grid-container__item">
             <div className="box item1">
