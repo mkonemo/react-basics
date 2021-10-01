@@ -8,7 +8,6 @@ import LiftingStateUp from './components/state/LiftingStateUp';
 import DynamicInlineStyles from './components/styles/DynamicInlineStyles';
 import DynamicClassStyles from './components/styles/DynamicClassStyles';
 
-
 import DateExample from './components/date/DateExample';
 import Json from './components/json/Json';
 import ClickEvent from './components/events/ClickEvent';
@@ -24,11 +23,15 @@ const App = () => {
     console.log(inputText);
   };
 
-  const [altTheme, setAltTeme] = useState(false);
-
+  const [altTheme, setAltTheme] = useState(false);
+  const changeThemeHandler = () => {
+    setAltTheme(true);
+  };
   return (
-    <div>
-      <button>Change Theme</button>
+    <div className={`altTheme ? 'alt-theme' : ''`}>
+      <button onClick={changeThemeHandler}>
+        <i class="fas fa-adjust"></i>
+      </button>
       <h1>
         <i class="fab fa-react"></i> React - A quick reference
       </h1>
