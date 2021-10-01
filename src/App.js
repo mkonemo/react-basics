@@ -24,8 +24,11 @@ const App = () => {
     console.log(inputText);
   };
 
+  const [altTheme, setAltTeme] = useState(false);
+
   return (
     <div>
+      <button>Change Theme</button>
       <h1>
         <i class="fab fa-react"></i> React - A quick reference
       </h1>
