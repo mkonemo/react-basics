@@ -80,7 +80,11 @@ h2 + div > h3 {
 }
 
 .alt-theme h1, .alt-theme h2 {
-  color: var(--heading-color-alt);
+  color: var(--heading-color_alt);
+}
+
+.alt-theme h2 {
+  background: var(--brand-color_2);
 }
 
 h3 {

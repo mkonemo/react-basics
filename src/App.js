@@ -25,10 +25,10 @@ const App = () => {
 
   const [altTheme, setAltTheme] = useState(false);
   const changeThemeHandler = () => {
-    setAltTheme(true);
+    setAltTheme(!altTheme);
   };
   return (
-    <div className={`altTheme ? 'alt-theme' : ''`}>
+    <div className={`${altTheme ? 'alt-theme' : ''}`}>
       <button onClick={changeThemeHandler}>
         <i class="fas fa-adjust"></i>
       </button>
