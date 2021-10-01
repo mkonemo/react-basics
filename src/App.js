@@ -6,6 +6,7 @@ import Props from './components/props/Props';
 import UseStateDefinition from './components/state/UseStateDefinition';
 import LiftingStateUp from './components/state/LiftingStateUp';
 import DynamicInlineStyles from './components/styles/DynamicInlineStyles';
+import DynamicClassStyles from './components/styles/DynamicClassStyles';
 
 
 import DateExample from './components/date/DateExample';
@@ -86,7 +87,7 @@ const App = () => {
               </li>
               <li>
                 <Show title="Dynamic CSS classes">
-                  <Props />
+                  <DynamicClassStyles />
                 </Show>
               </li>
             </ol>

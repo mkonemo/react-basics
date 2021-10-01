@@ -1,0 +1,7 @@
+.text {
+  color: olive;
+}
+
+.text.invalid {
+  color: lime;
+}
