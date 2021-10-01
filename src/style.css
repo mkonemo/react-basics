@@ -14,13 +14,13 @@ body {
   padding: 2rem 1rem 3rem 1rem;
   
 }
-body>div#root>div {
+#main {
   background: var(--brand-color_1);
   border-radius: 1.5rem;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
-body>div#root>div.alt-theme {
+#main.alt-theme {
   background: var(--brand-color_2);
 }
 
