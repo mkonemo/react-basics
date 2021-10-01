@@ -16,7 +16,7 @@ const DynamicInlineStyles = () => {
         <samp>isValid</samp> value.
       </p>
       <Card>
-        <samp style={{ color: isValid ? 'lime' : 'red' }}>
+        <samp style={{ color: isValid ? 'olive' : 'orange' }}>
           isValid = '{variable}'
         </samp>
         <br />
