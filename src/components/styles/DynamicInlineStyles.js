@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import Card from './UI/Card';
+import Card from '../UI/Card';
 
 const DynamicInlineStyles = () => {
+
+  const [isValid, setIsValid] = useState(true);
+  let variable = isValid.toString();
+
   return (
     <div>
-      <Card>Esempio</Card>
+      <Card><p>isValid = '{variable}'</p></Card>
+      <button>Change isValid</button>
     </div>
   );
 };

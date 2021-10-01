@@ -5,6 +5,8 @@ import Show from './components/UI/Show';
 import Props from './components/props/Props';
 import UseStateDefinition from './components/state/UseStateDefinition';
 import LiftingStateUp from './components/state/LiftingStateUp';
+import DynamicInlineStyles from './components/styles/DynamicInlineStyles';
+
 
 import DateExample from './components/date/DateExample';
 import Json from './components/json/Json';
@@ -79,7 +81,7 @@ const App = () => {
             <ol>
               <li>
                 <Show title="Dynamic inline styles">
-                  <Props />
+                  <DynamicInlineStyles />
                 </Show>
               </li>
               <li>
