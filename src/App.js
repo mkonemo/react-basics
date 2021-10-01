@@ -29,7 +29,7 @@ const App = () => {
   };
   return (
     <div className={`${altTheme ? 'alt-theme' : ''}`}>
-      <button onClick={changeThemeHandler}>
+      <button className="btn-theme" onClick={changeThemeHandler}>
         <i class="fas fa-adjust"></i>
       </button>
       <h1>

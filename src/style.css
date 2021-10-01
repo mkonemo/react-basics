@@ -107,3 +107,9 @@ div {
 .codeBlock {
   font-family: monospace;
 }
+
+button.btn-theme {
+  float: right;
+  margin: 1rem;
+  cursor: pointer;
+}
