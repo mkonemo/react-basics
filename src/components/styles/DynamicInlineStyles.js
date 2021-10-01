@@ -11,11 +11,11 @@ const DynamicInlineStyles = () => {
   let variable = isValid.toString();
   return (
     <div>
+      <p>
+        The style of the paragraph is set depending on the value of the 
+        <samp>isValid</samp> value.
+      </p>
       <Card>
-        <p>
-          The style of the paragraph is set depending on the value of the{' '}
-          <samp>isValid</samp> value.
-        </p>
         <samp style={{ color: isValid ? 'lime' : 'red' }}>
           isValid = '{variable}'
         </samp>
