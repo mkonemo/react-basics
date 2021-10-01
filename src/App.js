@@ -25,7 +25,7 @@ const App = () => {
 
   const [altTheme, setAltTheme] = useState(false);
   const changeThemeHandler = () => {
-    setAltTheme(!altTheme);
+    setAltTheme(!altTheme); 
   };
   return (
     <div id="main" className={`${altTheme ? 'alt-theme' : ''}`}>
