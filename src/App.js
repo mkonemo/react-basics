@@ -30,7 +30,11 @@ const App = () => {
   return (
     <div>
       <div id="main" className={`main ${altTheme ? 'alt-theme' : ''}`}>
-        <button className="btn-theme" title="Switch color theme" onClick={changeThemeHandler}>
+        <button
+          className="btn-theme"
+          title="Switch color theme"
+          onClick={changeThemeHandler}
+        >
           <i class="fas fa-adjust"></i>
         </button>
         <h1>
@@ -93,6 +97,12 @@ const App = () => {
                 </li>
                 <li>
                   <Show title="Dynamic CSS classes">
+                    <DynamicClassStyles />
+                  </Show>
+                </li>
+
+                <li>
+                  <Show title="Styled components">
                     <DynamicClassStyles />
                   </Show>
                 </li>
