@@ -29,10 +29,11 @@ const App = () => {
   };
   return (
     <div>
+     
+      <div id="main" className={`main ${altTheme ? 'alt-theme' : ''}`}>
       <h1>
           <i class="fab fa-react"></i> React - A quick reference
         </h1>
-      <div id="main" className={`main ${altTheme ? 'alt-theme' : ''}`}>
         <button className="btn-theme" onClick={changeThemeHandler}>
           <i class="fas fa-adjust"></i>
         </button>
