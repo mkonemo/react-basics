@@ -30,7 +30,7 @@ const App = () => {
   return (
     <div>
       <div id="main" className={`main ${altTheme ? 'alt-theme' : ''}`}>
-        <button className="btn-theme" onClick={changeThemeHandler}>
+        <button className="btn-theme" title="Switch color theme" onClick={changeThemeHandler}>
           <i class="fas fa-adjust"></i>
         </button>
         <h1>
