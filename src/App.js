@@ -7,6 +7,7 @@ import UseStateDefinition from './components/state/UseStateDefinition';
 import LiftingStateUp from './components/state/LiftingStateUp';
 import DynamicInlineStyles from './components/styles/DynamicInlineStyles';
 import DynamicClassStyles from './components/styles/DynamicClassStyles';
+import StyledComponents from './components/styles/StyledComponents';
 
 import DateExample from './components/date/DateExample';
 import Json from './components/json/Json';
@@ -103,7 +104,7 @@ const App = () => {
 
                 <li>
                   <Show title="Styled components">
-                    <DynamicClassStyles />
+                    <StyledComponents />
                   </Show>
                 </li>
               </ol>
