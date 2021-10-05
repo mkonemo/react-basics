@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 import Card from '../UI/Card';
-
 
 import './StyledComponents.css';
 
@@ -15,10 +14,14 @@ const StyledComponents = () => {
   return (
     <div>
       <p>
-        By default, CSS files are not scoped into the app: any css added to a single component would affect all other components. To introduce scoped styles into the app there are two different approaches.
+        By default, CSS files are not scoped into the app: any css added to a
+        single component would affect all other components. To introduce scoped
+        styles into the app there are two different approaches.
       </p>
       <h4>Styled components</h4>
-      <a href="www.styled-components.com">www.styled-components.com</a>
+      <p>
+        <a href="www.styled-components.com">www.styled-components.com</a>
+      </p>
       <Card>
         <samp style={{ color: isValid ? 'olive' : 'orange' }}>
           isValid = '{variable}'
