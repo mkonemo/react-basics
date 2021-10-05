@@ -1,4 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+import Card from '../UI/Card';
+
 
 import './StyledComponents.css';
 
@@ -12,8 +15,7 @@ const StyledComponents = () => {
   return (
     <div>
       <p>
-        The style of the paragraph is set depending on the value of the 
-        <samp>isValid</samp> value.
+        By default, CSS files are not scoped into the app: any css added to a single component would affect all other components.
       </p>
       <Card>
         <samp style={{ color: isValid ? 'olive' : 'orange' }}>
