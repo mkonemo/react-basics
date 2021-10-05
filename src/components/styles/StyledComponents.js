@@ -23,12 +23,11 @@ const StyledComponents = () => {
         <a href="www.styled-components.com">www.styled-components.com</a>
       </p>
       <Card>
-        <samp style={{ color: isValid ? 'olive' : 'orange' }}>
-          isValid = '{variable}'
+        <p>The following code shows a peculiar syntax, called <em>"Attacked template literal"</em></p>
+        <samp>
+          import styled from 'styled-components' 
+          const Button = styled.button``;
         </samp>
-        <br />
-        <br />
-        <button onClick={stateChangeHandler}>Change isValid</button>
       </Card>
     </div>
   );
