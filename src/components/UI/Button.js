@@ -4,9 +4,10 @@ const Button = styled.button`
 
   font: inherit;
   padding: 0.5rem 1.5rem;
-  border: 1px solid #8b005d;
+  border: 1px solid #666;
+  border-radius: 4px;
   color: white;
-  background: #8b005d;
+  background: ${props => props.primary ? "red" : "#666"};;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
   cursor: pointer;
 
@@ -16,11 +17,10 @@ const Button = styled.button`
 
 &:hover,
 &:active {
-  background: #ac0e77;
-  border-color: #ac0e77;
+  background: #4d4d4d;
+  border-color: #4d4d4d;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
 }
 `;
-
 
 export default Button;

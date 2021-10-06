@@ -42,6 +42,9 @@ const StyledComponents = () => {
         <p>
           <Button>Styled button example</Button>
         </p>
+        <p>
+          <Button primary>Primary button example</Button>
+        </p>
       </Card>
     </div>
   );
