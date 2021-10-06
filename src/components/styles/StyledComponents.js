@@ -27,6 +27,7 @@ const StyledComponents = () => {
         <br />
         <a href="www.styled-components.com">www.styled-components.com</a>
       </p>
+      <p>The style is defined in a component, and the component can be imported and used into other components, like in the following example.</p>
       <Card>
         <p>
           The following code shows a peculiar syntax, called{' '}
