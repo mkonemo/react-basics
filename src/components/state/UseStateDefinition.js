@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import Button from '../UI/Button';
 import Card from '../UI/Card';
 
 const UseStateDefinition = () => {
@@ -154,7 +155,7 @@ you should call it and pass in a function to that function (see example).
         <p>
           <samp>{variable}</samp>
         </p>
-        <button onClick={clickHandler}>Click to update the state</button>
+        <Button onClick={clickHandler}>Click to update the state</Button>
       </Card>
     </div>
   );

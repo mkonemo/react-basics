@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './ShowElements.css';
 
-
+import Button from '../UI/Button';
 import Card from '../UI/Card';
 
 const ShowElements = () => {
@@ -19,11 +19,11 @@ const ShowElements = () => {
   return (
     <div>
       
-      {!isShown && <button className='exampleButton' onClick={startShowHandler}>Show element</button>}
-      {isShown && <button onClick={stopShowHandler}>Hide element</button>}
+      {!isShown && <Button className='exampleButton' onClick={startShowHandler}>Show element</Button>}
+      {isShown && <Button onClick={stopShowHandler}>Hide element</Button>}
       <br />
       <br />
-      {isShown && <Card><button type='button' onClick={stopShowHandler}>x</button>
+      {isShown && <Card><Button type='button' onClick={stopShowHandler}>x</Button>
         <h4>Element shown</h4>
       </Card>}
     </div>

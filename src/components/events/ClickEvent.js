@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../UI/Button';
 import Card from '../UI/Card';
 
 import './ClickEvent.css';
@@ -12,7 +13,7 @@ const ClickEvent = () => {
       
     <Card>
       <p>Click button to get an event on console log.</p>
-      <button onClick={clickHandler}>Click</button>
+      <Button onClick={clickHandler}>Click</Button>
     </Card>
     </div>
   );

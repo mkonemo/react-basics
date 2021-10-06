@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import Button from '../UI/Button';
 import Card from '../UI/Card';
 
 import './DynamicClassStyles.css';
@@ -23,7 +24,7 @@ const DynamicClassStyles = () => {
         </samp>
         <br />
         <br />
-        <button onClick={stateChangeHandler}>Change isValid</button>
+        <Button onClick={stateChangeHandler}>Change isValid</Button>
       </Card>
     </div>
   );

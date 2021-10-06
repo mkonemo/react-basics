@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import Button from '../UI/Button';
 import Card from '../UI/Card';
 
 const DynamicInlineStyles = () => {
@@ -21,7 +22,7 @@ const DynamicInlineStyles = () => {
         </samp>
         <br />
         <br />
-        <button onClick={stateChangeHandler}>Change isValid</button>
+        <Button onClick={stateChangeHandler}>Change isValid</Button>
       </Card>
     </div>
   );

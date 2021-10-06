@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+import Button from '../UI/Button';
 import Card from '../UI/Card';
 
 const LiftingStateExample = (props) => {
@@ -28,7 +30,7 @@ const LiftingStateExample = (props) => {
         <form onSubmit={submitHandler}>
         <label>Example: </label>
           <input type="text" value={enteredText} onChange={textChangeHandler} />
-          <button type="submit">Add text</button>
+          <Button type="submit">Add text</Button>
         </form>
       </Card>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import Button from '../UI/Button';
 import Card from '../UI/Card';
 
 const UpdateState = (props) => {
@@ -17,7 +18,7 @@ const UpdateState = (props) => {
         Click button to update:
         <br /> <em>{value}</em>
       </p>
-      <button onClick={clickHandler}>Click</button>
+      <Button onClick={clickHandler}>Click</Button>
       </Card>
     </div>
   );
