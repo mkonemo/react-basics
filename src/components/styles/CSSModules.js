@@ -2,7 +2,7 @@ import React from 'react';
 
 const CSSModules = () => {
   return(
-    <div>CSSModule</div>
+    <div>CSS modules are an alternative ti Styled Components to manage scoped styles.</div>
   )
 }
 
