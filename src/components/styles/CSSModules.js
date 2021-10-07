@@ -18,7 +18,7 @@ const CSSModules = () => {
       <Card>
         <p>The green text is styled using a CSS module.</p>
         <p>This is the syntax to import a CSS module:</p>
-        <samp className={styles.greenText}>import styles from './Style.module.css';</samp>
+        <samp className={styles['green-text']}>import styles from './Style.module.css';</samp>
         
       </Card>
     </div>
