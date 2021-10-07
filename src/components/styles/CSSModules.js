@@ -2,6 +2,9 @@ import React from 'react';
 
 import Card from '../UI/Card';
 
+import styles from './CSSModules.module.css';
+
+
 
 const CSSModules = () => {
   return (
@@ -14,7 +17,7 @@ const CSSModules = () => {
       <p>In order to implement them you need to name the the CSS file like <samp>Style.module.css</samp> and import it with a specific syntax.</p>
       <Card>
         <p>This is the syntax to import a CSS module:</p>
-        <samp>import styles from './Style.module.css';</samp>
+        <samp className={styles.greenText}>import styles from './Style.module.css';</samp>
         
       </Card>
     </div>
