@@ -8,6 +8,8 @@ import LiftingStateUp from './components/state/LiftingStateUp';
 import DynamicInlineStyles from './components/styles/DynamicInlineStyles';
 import DynamicClassStyles from './components/styles/DynamicClassStyles';
 import StyledComponents from './components/styles/StyledComponents';
+import CSSModules from './components/styles/CSSModules';
+
 
 import DateExample from './components/date/DateExample';
 import Json from './components/json/Json';
@@ -101,10 +103,14 @@ const App = () => {
                     <DynamicClassStyles />
                   </Show>
                 </li>
-
                 <li>
                   <Show title="Styled components">
                     <StyledComponents />
+                  </Show>
+                </li>
+                <li>
+                  <Show title="CSS modules">
+                    <CSSModules />
                   </Show>
                 </li>
               </ol>
