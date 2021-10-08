@@ -187,7 +187,7 @@ const App = () => {
                   </Show>
                 </li>
                 <li>
-                  <Show title="Delete elements">
+                  <Show title="Delete list elements">
                     <p>For an example on how to delete list elements, refer to the <a target='_blank' href="https://react-2nd-project.firebaseapp.com/?38820">2nd project</a> in the React course.</p>
                   </Show>
                 </li>
