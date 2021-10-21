@@ -4,9 +4,9 @@ import Card from '../UI/Card';
 
 const DateExample = () => {
   const dateValue = new Date();
-  const month = dateValue.toLocaleString('en-US', { month: 'long' });
+  const month = dateValue.toLocaleString('en-EN', { month: 'long' });
   const year = dateValue.getFullYear();
-  const day = dateValue.toLocaleString('en-US', { day: '2-digit' });
+  const day = dateValue.toLocaleString('en-EN', { day: '2-digit' });
   
   const fullDate = dateValue.toLocaleString('it-IT');
 const shortDate = dateValue.toLocaleString('it-IT').split(',')[0];;
@@ -14,9 +14,7 @@ const shortDate = dateValue.toLocaleString('it-IT').split(',')[0];;
     <div>
       
       <Card>
-        <div>{month}</div>
-        <div>{year}</div>
-        <div>{day}</div>
+        <div>{month}, {day} {year}</div>
         <div>{fullDate}</div>
         <div>{shortDate}</div>
       </Card>
