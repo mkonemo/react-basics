@@ -7,7 +7,9 @@ const DateExample = () => {
   const month = dateValue.toLocaleString('en-US', { month: 'long' });
   const year = dateValue.getFullYear();
   const day = dateValue.toLocaleString('en-US', { day: '2-digit' });
-
+  
+  const fullDate = dateValue.toLocaleString('it-IT');
+const shortDate = dateValue.toLocaleString('it-IT').split(',')[0];;
   return (
     <div>
       
@@ -15,6 +17,8 @@ const DateExample = () => {
         <div>{month}</div>
         <div>{year}</div>
         <div>{day}</div>
+        <div>{fullDate}</div>
+        <div>{shortDate}</div>
       </Card>
     </div>
   );
