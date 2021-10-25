@@ -9,6 +9,8 @@ import DynamicInlineStyles from './components/styles/DynamicInlineStyles';
 import DynamicClassStyles from './components/styles/DynamicClassStyles';
 import StyledComponents from './components/styles/StyledComponents';
 import CSSModules from './components/styles/CSSModules';
+import Portals from './components/portals/Portals';
+
 
 
 import DateExample from './components/date/DateExample';
@@ -84,6 +86,11 @@ const App = () => {
                     </p>
                   </Show>
                 </li>
+                <li>
+                  <Show title="Fragments, Portals & Refs">
+                    <Portals />
+                  </Show>
+                </li>
               </ol>
             </div>
 
@@ -113,6 +120,8 @@ const App = () => {
                     <CSSModules />
                   </Show>
                 </li>
+                
+                
               </ol>
             </div>
           </div>
