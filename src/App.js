@@ -11,8 +11,6 @@ import StyledComponents from './components/styles/StyledComponents';
 import CSSModules from './components/styles/CSSModules';
 import Portals from './components/portals/Portals';
 
-
-
 import DateExample from './components/date/DateExample';
 import Json from './components/json/Json';
 import ClickEvent from './components/events/ClickEvent';
@@ -33,7 +31,7 @@ const App = () => {
     setAltTheme(!altTheme);
   };
   return (
-    <div>
+    <React.Fragment>
       <div id="main" className={`main ${altTheme ? 'alt-theme' : ''}`}>
         <button
           className="btn-theme"
@@ -120,8 +118,6 @@ const App = () => {
                     <CSSModules />
                   </Show>
                 </li>
-                
-                
               </ol>
             </div>
           </div>
@@ -197,15 +193,38 @@ const App = () => {
                 </li>
                 <li>
                   <Show title="Delete list elements">
-                    <p>For an example on how to delete list elements, refer to the <a target='_blank' href="https://react-2nd-project.firebaseapp.com/?38820">2nd project</a> in the React course.</p>
+                    <p>
+                      For an example on how to delete list elements, refer to
+                      the{' '}
+                      <a
+                        target="_blank"
+                        href="https://react-2nd-project.firebaseapp.com/?38820"
+                      >
+                        2nd project
+                      </a>{' '}
+                      in the React course.
+                    </p>
                   </Show>
                 </li>
               </ol>
             </div>
           </div>
+          <div className="grid-container__item">
+            <div className="box item4">
+              <h2>
+                <i class="fas fa-code"></i> Advanced
+              </h2>
+
+              <ol>
+                <li><Show title="useEffect">
+                    <DateExample />
+                  </Show></li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 export default App;
