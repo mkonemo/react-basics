@@ -216,7 +216,7 @@ const App = () => {
               </h2>
 
               <ol>
-                <li><Show title="useEffect">
+                <li><Show title="useEffect() hook">
                     <DateExample />
                   </Show></li>
               </ol>
